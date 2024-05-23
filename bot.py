@@ -21,7 +21,7 @@ bot = commands.Bot(command_prefix='!', intents=intents)
 @bot.command()
 async def hello(ctx):
     """pb says hello when prompted"""
-    log_event('INFO', user=str(ctx.author), command='hello')
+    log_event('INFO','bot command invoked by user', user=str(ctx.author), command='hello')
     await ctx.send('hellooo there!')
 
 # EVENTS
