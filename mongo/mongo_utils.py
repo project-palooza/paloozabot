@@ -50,6 +50,6 @@ def process_log_file(db, file_path):
 
 if __name__ == "__main__":
     db = get_mongodb(ip,"paloozabot")
-    if db:
+    if db is not None:
         process_log_file(db, "../paloozabot.log")
 
