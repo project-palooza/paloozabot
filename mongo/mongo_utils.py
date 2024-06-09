@@ -52,4 +52,9 @@ if __name__ == "__main__":
     db = get_mongodb(ip,"paloozabot")
     if db is not None:
         process_log_file(db, "../paloozabot.log")
+    # collection = db["logs"]
+    # records = collection.find().limit(5)
+    # for i,record in enumerate(records):
+    #     print(i)
+    #     print(record)
 
