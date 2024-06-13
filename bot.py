@@ -1,8 +1,6 @@
 import os
 import discord
 from discord.ext import commands
-from helpers.utils import pick_name
-from helpers.logging_config import logger, log_event
 from dotenv import load_dotenv
 
 # ENV
@@ -16,12 +14,6 @@ intents.message_content = True
 intents.reactions = True
 
 bot = commands.Bot(command_prefix='!', intents=intents)
-
-import os
-import discord
-from discord.ext import commands
-from dotenv import load_dotenv
-from helpers.logging_config import logger
 
 # ENV
 _ = load_dotenv()
